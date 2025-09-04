@@ -1,0 +1,19 @@
+{
+  "name": "safe-nest-vpn-service",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "keywords": [
+    "vpn projects,vpn service templates"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "This is tailwind css version 4, vpn services projects",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.12",
+    "tailwindcss": "^4.1.12"
+  }
+}
