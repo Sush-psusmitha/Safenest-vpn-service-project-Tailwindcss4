@@ -3,6 +3,9 @@
 
 @import "tailwindcss";
 
+html{
+    scroll-behavior: smooth;
+}
 @theme{
     --color-primary: #F53838; 
     --color-secondary: rgba(245, 56, 56, 0.35);
@@ -13,7 +16,7 @@
 
 @layer{
     .section-container{
-        @apply max-w-[1440px] container mx-auto px-4 py-16
+        @apply max-w-[1440px] container mx-auto px-4 py-25
     }
 }
 .swiper-pagination-bullet{

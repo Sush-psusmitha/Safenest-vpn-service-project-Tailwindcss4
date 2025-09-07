@@ -13,8 +13,12 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
-<body>
+<body class="font-primary">
    <!-- Header -->
     <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-1">
         <nav class="max-w-[1440px] container mx-auto px-4 py-4 flex items-center justify-between">
@@ -60,7 +64,8 @@
     <!-- Hero Section -->
      <section id="about" class="max-w-[1440px] container mx-auto px-4 py-28 flex flex-col md:flex-row items-center gap-12">
         <!-- left content -->
-        <div class="md:w-1/2 mb-8 md:mb-0 space-y-8">
+        <div class="md:w-1/2 mb-8 md:mb-0 space-y-8" data-aos="fade-right" >
+
             <h1 class="lg:text-6xl md:text-5xl text-4xl font-bold text-heading-text leading-tight">Want anything to be easy with SafeNestVPN.</h1>
             <p class="text-primary-text text-lg leading-relaxed max-w-xl">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
 
@@ -68,7 +73,7 @@
         </div>
 
         <!-- right content -->
-         <div class="md:w-1/2">
+         <div class="md:w-1/2" data-aos="fade-left">
             <img src="./images/banner.png" alt="banner img" class="w-full">
          </div>
 
@@ -76,8 +81,8 @@
 
      <!-- Statistics -->
 
-     <section  class="section-container">
-       <div class="bg-white rounded-xl shadow-lg p-8">
+     <section class="section-container">
+       <div data-aos="fade-up" class="bg-white rounded-xl shadow-lg p-8">
         <div class="flex flex-col md:flex-row justify-around items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
             <!-- user stats -->
 
@@ -120,12 +125,12 @@
      <section id="features" class="section-container">
         <div class="flex flex-col md:flex-row items-center justify-between gap-12">
         <!-- left-img -->
-         <div class="md:w-1/2">
+         <div class="md:w-1/2" data-aos="fade-left">
             <img src="./images/features.png" alt="">
          </div>
 
          <!-- right-content -->
-          <div class="md:w-1/2 space-y-6">
+          <div class="md:w-1/2 space-y-6" data-aos="fade-right">
               <h2 class="text-heading-text font-bold text-4xl leading-tight">We Provide Many <br> Features You Can Use</h2>
           <p class="text-primary-text leading-relaxed md:w-2/3">You can explore the features that we provide with fun and have their own functions each feature.</p>
 
@@ -178,7 +183,7 @@
 
             <!-- free plan -->
 
-            <div class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
+            <div data-aos="fade-up" class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
        
               <img src="./images/box.png" class="w-32 mb-8" alt="price">
               <h3 class="text-2xl mb-8">Free Plan</h3>
@@ -218,7 +223,7 @@
             </div>
 
             <!-- Standard plan -->
-             <div class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
+             <div data-aos="fade-up" class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
        
               <img src="./images/box.png" class="w-32 mb-8" alt="price">
               <h3 class="text-2xl mb-8">Standard Plan</h3>
@@ -265,7 +270,7 @@
 
             <!-- Primium plan -->
 
-            <div class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
+            <div data-aos="fade-up" class="bg-white md:p-8 p-4 rounded-2xl  border-2 border-gray-200 flex flex-col items-center hover:border-red-500 transition duration-300 hover:scale-110">
        
               <img src="./images/box.png" class="w-32 mb-8" alt="price">
               <h3 class="text-2xl mb-8">Standard Plan</h3>
@@ -322,7 +327,7 @@
 
      <!-- Global net work section -->
 
-     <section class="section-container">
+     <section data-aos="fade-in" class="section-container">
       
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-2/4 mx-auto">Huge Global Network of Fast VPN</h2>
@@ -347,7 +352,7 @@
 
      <!-- Testimonial -->
 
-     <section id="testimonials" class="section-container">
+     <section data-aos="fade-up" id="testimonials" class="section-container">
 
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-heading-text mb-4 md:w-2/3 mx-auto">Trusted by Thousands of Happy Customer</h2>
@@ -388,7 +393,8 @@
 
      <!-- Subscribe section -->
 
-     <section class="section-container">
+     <section data-aos="fade-up" id="subscribe"
+     class="section-container">
 
        <div class="bg-white rounded-xl shadow-lg lg:p-16 md:p-12 p-8 hover:shadow-2xl transition duration-500">
 
@@ -524,6 +530,16 @@
 
      <script src="./js/app.js"></script>
 
+     <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+        {
+            duration: 1000,
+            once:true
+        }
+    );
+  </script>
 
 </body>
 </html>
