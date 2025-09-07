@@ -6,6 +6,13 @@
     <title>SafeNest | VPN Services - using tailwind css4</title>
 
     <link rel="stylesheet" href="./output.css">
+
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
    <!-- Header -->
@@ -348,11 +355,37 @@
             </p>
           </div>
           <!-- slider -->
-           
 
+<!-- Slider main container -->
+<div class="swiper testimonialSwiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+   
+   
+  </div>
+  <!-- Navigation arrows -->
+  <div class="flex justify-between items-center mt-12">
+    <!-- pagination -->
+      <div class="swiper-pagination !relative !bottom-0 !w-auto"></div>
+
+      <!-- navigation arrows -->
+       <div class="flex sm:!flex lg:!flex xl:!flex pag-4 gap-4">
+
+         <div class="swiper-button-prev !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full border-2 border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-primary">
+            <img src="./images/arrow-left.png" class="h-6 w-6 " alt="">
+         </div>
+         <div class="swiper-button-next !static !w-[60px] !h-[60px] flex items-center justify-center rounded-full border-2 bg-primary border-[#F53855] text-[#F53855] hover:bg-red-200 hover:text-primary">
+            <img src="./images/arrow-right.png" class="h-6 w-6 " alt="">
+         </div>
+
+       </div>
+  </div>
+</div>
 
      </section>
 
+     <script src="./js/app.js"></script>
 
 
 </body>
